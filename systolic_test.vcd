@@ -1,0 +1,1131 @@
+$date
+	Thu Dec 25 21:49:30 2025
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module tb_systolic_2x2 $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var reg 1 # load_en $end
+$var reg 16 $ data_in [15:0] $end
+$var reg 16 % weight_in [15:0] $end
+$var wire 1 & result_row0 [31] $end
+$var wire 1 ' result_row0 [30] $end
+$var wire 1 ( result_row0 [29] $end
+$var wire 1 ) result_row0 [28] $end
+$var wire 1 * result_row0 [27] $end
+$var wire 1 + result_row0 [26] $end
+$var wire 1 , result_row0 [25] $end
+$var wire 1 - result_row0 [24] $end
+$var wire 1 . result_row0 [23] $end
+$var wire 1 / result_row0 [22] $end
+$var wire 1 0 result_row0 [21] $end
+$var wire 1 1 result_row0 [20] $end
+$var wire 1 2 result_row0 [19] $end
+$var wire 1 3 result_row0 [18] $end
+$var wire 1 4 result_row0 [17] $end
+$var wire 1 5 result_row0 [16] $end
+$var wire 1 6 result_row0 [15] $end
+$var wire 1 7 result_row0 [14] $end
+$var wire 1 8 result_row0 [13] $end
+$var wire 1 9 result_row0 [12] $end
+$var wire 1 : result_row0 [11] $end
+$var wire 1 ; result_row0 [10] $end
+$var wire 1 < result_row0 [9] $end
+$var wire 1 = result_row0 [8] $end
+$var wire 1 > result_row0 [7] $end
+$var wire 1 ? result_row0 [6] $end
+$var wire 1 @ result_row0 [5] $end
+$var wire 1 A result_row0 [4] $end
+$var wire 1 B result_row0 [3] $end
+$var wire 1 C result_row0 [2] $end
+$var wire 1 D result_row0 [1] $end
+$var wire 1 E result_row0 [0] $end
+$var wire 1 F result_row1 [31] $end
+$var wire 1 G result_row1 [30] $end
+$var wire 1 H result_row1 [29] $end
+$var wire 1 I result_row1 [28] $end
+$var wire 1 J result_row1 [27] $end
+$var wire 1 K result_row1 [26] $end
+$var wire 1 L result_row1 [25] $end
+$var wire 1 M result_row1 [24] $end
+$var wire 1 N result_row1 [23] $end
+$var wire 1 O result_row1 [22] $end
+$var wire 1 P result_row1 [21] $end
+$var wire 1 Q result_row1 [20] $end
+$var wire 1 R result_row1 [19] $end
+$var wire 1 S result_row1 [18] $end
+$var wire 1 T result_row1 [17] $end
+$var wire 1 U result_row1 [16] $end
+$var wire 1 V result_row1 [15] $end
+$var wire 1 W result_row1 [14] $end
+$var wire 1 X result_row1 [13] $end
+$var wire 1 Y result_row1 [12] $end
+$var wire 1 Z result_row1 [11] $end
+$var wire 1 [ result_row1 [10] $end
+$var wire 1 \ result_row1 [9] $end
+$var wire 1 ] result_row1 [8] $end
+$var wire 1 ^ result_row1 [7] $end
+$var wire 1 _ result_row1 [6] $end
+$var wire 1 ` result_row1 [5] $end
+$var wire 1 a result_row1 [4] $end
+$var wire 1 b result_row1 [3] $end
+$var wire 1 c result_row1 [2] $end
+$var wire 1 d result_row1 [1] $end
+$var wire 1 e result_row1 [0] $end
+$scope task input_weight $end
+$var reg 16 f val [15:0] $end
+$upscope $end
+$scope task input_data $end
+$var reg 16 g val [15:0] $end
+$upscope $end
+$scope module uut $end
+$var wire 1 h clk $end
+$var wire 1 i rst_n $end
+$var wire 1 j load_en $end
+$var wire 1 k data_in [15] $end
+$var wire 1 l data_in [14] $end
+$var wire 1 m data_in [13] $end
+$var wire 1 n data_in [12] $end
+$var wire 1 o data_in [11] $end
+$var wire 1 p data_in [10] $end
+$var wire 1 q data_in [9] $end
+$var wire 1 r data_in [8] $end
+$var wire 1 s data_in [7] $end
+$var wire 1 t data_in [6] $end
+$var wire 1 u data_in [5] $end
+$var wire 1 v data_in [4] $end
+$var wire 1 w data_in [3] $end
+$var wire 1 x data_in [2] $end
+$var wire 1 y data_in [1] $end
+$var wire 1 z data_in [0] $end
+$var wire 1 { weight_in [15] $end
+$var wire 1 | weight_in [14] $end
+$var wire 1 } weight_in [13] $end
+$var wire 1 ~ weight_in [12] $end
+$var wire 1 !! weight_in [11] $end
+$var wire 1 "! weight_in [10] $end
+$var wire 1 #! weight_in [9] $end
+$var wire 1 $! weight_in [8] $end
+$var wire 1 %! weight_in [7] $end
+$var wire 1 &! weight_in [6] $end
+$var wire 1 '! weight_in [5] $end
+$var wire 1 (! weight_in [4] $end
+$var wire 1 )! weight_in [3] $end
+$var wire 1 *! weight_in [2] $end
+$var wire 1 +! weight_in [1] $end
+$var wire 1 ,! weight_in [0] $end
+$var wire 1 & result_row0 [31] $end
+$var wire 1 ' result_row0 [30] $end
+$var wire 1 ( result_row0 [29] $end
+$var wire 1 ) result_row0 [28] $end
+$var wire 1 * result_row0 [27] $end
+$var wire 1 + result_row0 [26] $end
+$var wire 1 , result_row0 [25] $end
+$var wire 1 - result_row0 [24] $end
+$var wire 1 . result_row0 [23] $end
+$var wire 1 / result_row0 [22] $end
+$var wire 1 0 result_row0 [21] $end
+$var wire 1 1 result_row0 [20] $end
+$var wire 1 2 result_row0 [19] $end
+$var wire 1 3 result_row0 [18] $end
+$var wire 1 4 result_row0 [17] $end
+$var wire 1 5 result_row0 [16] $end
+$var wire 1 6 result_row0 [15] $end
+$var wire 1 7 result_row0 [14] $end
+$var wire 1 8 result_row0 [13] $end
+$var wire 1 9 result_row0 [12] $end
+$var wire 1 : result_row0 [11] $end
+$var wire 1 ; result_row0 [10] $end
+$var wire 1 < result_row0 [9] $end
+$var wire 1 = result_row0 [8] $end
+$var wire 1 > result_row0 [7] $end
+$var wire 1 ? result_row0 [6] $end
+$var wire 1 @ result_row0 [5] $end
+$var wire 1 A result_row0 [4] $end
+$var wire 1 B result_row0 [3] $end
+$var wire 1 C result_row0 [2] $end
+$var wire 1 D result_row0 [1] $end
+$var wire 1 E result_row0 [0] $end
+$var wire 1 F result_row1 [31] $end
+$var wire 1 G result_row1 [30] $end
+$var wire 1 H result_row1 [29] $end
+$var wire 1 I result_row1 [28] $end
+$var wire 1 J result_row1 [27] $end
+$var wire 1 K result_row1 [26] $end
+$var wire 1 L result_row1 [25] $end
+$var wire 1 M result_row1 [24] $end
+$var wire 1 N result_row1 [23] $end
+$var wire 1 O result_row1 [22] $end
+$var wire 1 P result_row1 [21] $end
+$var wire 1 Q result_row1 [20] $end
+$var wire 1 R result_row1 [19] $end
+$var wire 1 S result_row1 [18] $end
+$var wire 1 T result_row1 [17] $end
+$var wire 1 U result_row1 [16] $end
+$var wire 1 V result_row1 [15] $end
+$var wire 1 W result_row1 [14] $end
+$var wire 1 X result_row1 [13] $end
+$var wire 1 Y result_row1 [12] $end
+$var wire 1 Z result_row1 [11] $end
+$var wire 1 [ result_row1 [10] $end
+$var wire 1 \ result_row1 [9] $end
+$var wire 1 ] result_row1 [8] $end
+$var wire 1 ^ result_row1 [7] $end
+$var wire 1 _ result_row1 [6] $end
+$var wire 1 ` result_row1 [5] $end
+$var wire 1 a result_row1 [4] $end
+$var wire 1 b result_row1 [3] $end
+$var wire 1 c result_row1 [2] $end
+$var wire 1 d result_row1 [1] $end
+$var wire 1 e result_row1 [0] $end
+$var wire 1 -! sum_out_0 [31] $end
+$var wire 1 .! sum_out_0 [30] $end
+$var wire 1 /! sum_out_0 [29] $end
+$var wire 1 0! sum_out_0 [28] $end
+$var wire 1 1! sum_out_0 [27] $end
+$var wire 1 2! sum_out_0 [26] $end
+$var wire 1 3! sum_out_0 [25] $end
+$var wire 1 4! sum_out_0 [24] $end
+$var wire 1 5! sum_out_0 [23] $end
+$var wire 1 6! sum_out_0 [22] $end
+$var wire 1 7! sum_out_0 [21] $end
+$var wire 1 8! sum_out_0 [20] $end
+$var wire 1 9! sum_out_0 [19] $end
+$var wire 1 :! sum_out_0 [18] $end
+$var wire 1 ;! sum_out_0 [17] $end
+$var wire 1 <! sum_out_0 [16] $end
+$var wire 1 =! sum_out_0 [15] $end
+$var wire 1 >! sum_out_0 [14] $end
+$var wire 1 ?! sum_out_0 [13] $end
+$var wire 1 @! sum_out_0 [12] $end
+$var wire 1 A! sum_out_0 [11] $end
+$var wire 1 B! sum_out_0 [10] $end
+$var wire 1 C! sum_out_0 [9] $end
+$var wire 1 D! sum_out_0 [8] $end
+$var wire 1 E! sum_out_0 [7] $end
+$var wire 1 F! sum_out_0 [6] $end
+$var wire 1 G! sum_out_0 [5] $end
+$var wire 1 H! sum_out_0 [4] $end
+$var wire 1 I! sum_out_0 [3] $end
+$var wire 1 J! sum_out_0 [2] $end
+$var wire 1 K! sum_out_0 [1] $end
+$var wire 1 L! sum_out_0 [0] $end
+$var wire 1 M! sum_out_1 [31] $end
+$var wire 1 N! sum_out_1 [30] $end
+$var wire 1 O! sum_out_1 [29] $end
+$var wire 1 P! sum_out_1 [28] $end
+$var wire 1 Q! sum_out_1 [27] $end
+$var wire 1 R! sum_out_1 [26] $end
+$var wire 1 S! sum_out_1 [25] $end
+$var wire 1 T! sum_out_1 [24] $end
+$var wire 1 U! sum_out_1 [23] $end
+$var wire 1 V! sum_out_1 [22] $end
+$var wire 1 W! sum_out_1 [21] $end
+$var wire 1 X! sum_out_1 [20] $end
+$var wire 1 Y! sum_out_1 [19] $end
+$var wire 1 Z! sum_out_1 [18] $end
+$var wire 1 [! sum_out_1 [17] $end
+$var wire 1 \! sum_out_1 [16] $end
+$var wire 1 ]! sum_out_1 [15] $end
+$var wire 1 ^! sum_out_1 [14] $end
+$var wire 1 _! sum_out_1 [13] $end
+$var wire 1 `! sum_out_1 [12] $end
+$var wire 1 a! sum_out_1 [11] $end
+$var wire 1 b! sum_out_1 [10] $end
+$var wire 1 c! sum_out_1 [9] $end
+$var wire 1 d! sum_out_1 [8] $end
+$var wire 1 e! sum_out_1 [7] $end
+$var wire 1 f! sum_out_1 [6] $end
+$var wire 1 g! sum_out_1 [5] $end
+$var wire 1 h! sum_out_1 [4] $end
+$var wire 1 i! sum_out_1 [3] $end
+$var wire 1 j! sum_out_1 [2] $end
+$var wire 1 k! sum_out_1 [1] $end
+$var wire 1 l! sum_out_1 [0] $end
+$var wire 1 m! weight_out_0 [15] $end
+$var wire 1 n! weight_out_0 [14] $end
+$var wire 1 o! weight_out_0 [13] $end
+$var wire 1 p! weight_out_0 [12] $end
+$var wire 1 q! weight_out_0 [11] $end
+$var wire 1 r! weight_out_0 [10] $end
+$var wire 1 s! weight_out_0 [9] $end
+$var wire 1 t! weight_out_0 [8] $end
+$var wire 1 u! weight_out_0 [7] $end
+$var wire 1 v! weight_out_0 [6] $end
+$var wire 1 w! weight_out_0 [5] $end
+$var wire 1 x! weight_out_0 [4] $end
+$var wire 1 y! weight_out_0 [3] $end
+$var wire 1 z! weight_out_0 [2] $end
+$var wire 1 {! weight_out_0 [1] $end
+$var wire 1 |! weight_out_0 [0] $end
+$var wire 1 }! weight_out_1 [15] $end
+$var wire 1 ~! weight_out_1 [14] $end
+$var wire 1 !" weight_out_1 [13] $end
+$var wire 1 "" weight_out_1 [12] $end
+$var wire 1 #" weight_out_1 [11] $end
+$var wire 1 $" weight_out_1 [10] $end
+$var wire 1 %" weight_out_1 [9] $end
+$var wire 1 &" weight_out_1 [8] $end
+$var wire 1 '" weight_out_1 [7] $end
+$var wire 1 (" weight_out_1 [6] $end
+$var wire 1 )" weight_out_1 [5] $end
+$var wire 1 *" weight_out_1 [4] $end
+$var wire 1 +" weight_out_1 [3] $end
+$var wire 1 ," weight_out_1 [2] $end
+$var wire 1 -" weight_out_1 [1] $end
+$var wire 1 ." weight_out_1 [0] $end
+$var wire 1 /" weight_out_2 [15] $end
+$var wire 1 0" weight_out_2 [14] $end
+$var wire 1 1" weight_out_2 [13] $end
+$var wire 1 2" weight_out_2 [12] $end
+$var wire 1 3" weight_out_2 [11] $end
+$var wire 1 4" weight_out_2 [10] $end
+$var wire 1 5" weight_out_2 [9] $end
+$var wire 1 6" weight_out_2 [8] $end
+$var wire 1 7" weight_out_2 [7] $end
+$var wire 1 8" weight_out_2 [6] $end
+$var wire 1 9" weight_out_2 [5] $end
+$var wire 1 :" weight_out_2 [4] $end
+$var wire 1 ;" weight_out_2 [3] $end
+$var wire 1 <" weight_out_2 [2] $end
+$var wire 1 =" weight_out_2 [1] $end
+$var wire 1 >" weight_out_2 [0] $end
+$var wire 1 ?" weight_out_3 [15] $end
+$var wire 1 @" weight_out_3 [14] $end
+$var wire 1 A" weight_out_3 [13] $end
+$var wire 1 B" weight_out_3 [12] $end
+$var wire 1 C" weight_out_3 [11] $end
+$var wire 1 D" weight_out_3 [10] $end
+$var wire 1 E" weight_out_3 [9] $end
+$var wire 1 F" weight_out_3 [8] $end
+$var wire 1 G" weight_out_3 [7] $end
+$var wire 1 H" weight_out_3 [6] $end
+$var wire 1 I" weight_out_3 [5] $end
+$var wire 1 J" weight_out_3 [4] $end
+$var wire 1 K" weight_out_3 [3] $end
+$var wire 1 L" weight_out_3 [2] $end
+$var wire 1 M" weight_out_3 [1] $end
+$var wire 1 N" weight_out_3 [0] $end
+$scope module PE00 $end
+$var parameter 32 O" DATA_WIDTH $end
+$var wire 1 h clk $end
+$var wire 1 i rst_n $end
+$var wire 1 j load_en $end
+$var wire 1 k data_in [15] $end
+$var wire 1 l data_in [14] $end
+$var wire 1 m data_in [13] $end
+$var wire 1 n data_in [12] $end
+$var wire 1 o data_in [11] $end
+$var wire 1 p data_in [10] $end
+$var wire 1 q data_in [9] $end
+$var wire 1 r data_in [8] $end
+$var wire 1 s data_in [7] $end
+$var wire 1 t data_in [6] $end
+$var wire 1 u data_in [5] $end
+$var wire 1 v data_in [4] $end
+$var wire 1 w data_in [3] $end
+$var wire 1 x data_in [2] $end
+$var wire 1 y data_in [1] $end
+$var wire 1 z data_in [0] $end
+$var wire 1 P" sum_in [31] $end
+$var wire 1 Q" sum_in [30] $end
+$var wire 1 R" sum_in [29] $end
+$var wire 1 S" sum_in [28] $end
+$var wire 1 T" sum_in [27] $end
+$var wire 1 U" sum_in [26] $end
+$var wire 1 V" sum_in [25] $end
+$var wire 1 W" sum_in [24] $end
+$var wire 1 X" sum_in [23] $end
+$var wire 1 Y" sum_in [22] $end
+$var wire 1 Z" sum_in [21] $end
+$var wire 1 [" sum_in [20] $end
+$var wire 1 \" sum_in [19] $end
+$var wire 1 ]" sum_in [18] $end
+$var wire 1 ^" sum_in [17] $end
+$var wire 1 _" sum_in [16] $end
+$var wire 1 `" sum_in [15] $end
+$var wire 1 a" sum_in [14] $end
+$var wire 1 b" sum_in [13] $end
+$var wire 1 c" sum_in [12] $end
+$var wire 1 d" sum_in [11] $end
+$var wire 1 e" sum_in [10] $end
+$var wire 1 f" sum_in [9] $end
+$var wire 1 g" sum_in [8] $end
+$var wire 1 h" sum_in [7] $end
+$var wire 1 i" sum_in [6] $end
+$var wire 1 j" sum_in [5] $end
+$var wire 1 k" sum_in [4] $end
+$var wire 1 l" sum_in [3] $end
+$var wire 1 m" sum_in [2] $end
+$var wire 1 n" sum_in [1] $end
+$var wire 1 o" sum_in [0] $end
+$var wire 1 { weight_in [15] $end
+$var wire 1 | weight_in [14] $end
+$var wire 1 } weight_in [13] $end
+$var wire 1 ~ weight_in [12] $end
+$var wire 1 !! weight_in [11] $end
+$var wire 1 "! weight_in [10] $end
+$var wire 1 #! weight_in [9] $end
+$var wire 1 $! weight_in [8] $end
+$var wire 1 %! weight_in [7] $end
+$var wire 1 &! weight_in [6] $end
+$var wire 1 '! weight_in [5] $end
+$var wire 1 (! weight_in [4] $end
+$var wire 1 )! weight_in [3] $end
+$var wire 1 *! weight_in [2] $end
+$var wire 1 +! weight_in [1] $end
+$var wire 1 ,! weight_in [0] $end
+$var wire 1 m! weight_out [15] $end
+$var wire 1 n! weight_out [14] $end
+$var wire 1 o! weight_out [13] $end
+$var wire 1 p! weight_out [12] $end
+$var wire 1 q! weight_out [11] $end
+$var wire 1 r! weight_out [10] $end
+$var wire 1 s! weight_out [9] $end
+$var wire 1 t! weight_out [8] $end
+$var wire 1 u! weight_out [7] $end
+$var wire 1 v! weight_out [6] $end
+$var wire 1 w! weight_out [5] $end
+$var wire 1 x! weight_out [4] $end
+$var wire 1 y! weight_out [3] $end
+$var wire 1 z! weight_out [2] $end
+$var wire 1 {! weight_out [1] $end
+$var wire 1 |! weight_out [0] $end
+$var reg 32 p" sum_out [31:0] $end
+$var reg 17 q" weight_reg [16:0] $end
+$upscope $end
+$scope module PE01 $end
+$var parameter 32 r" DATA_WIDTH $end
+$var wire 1 h clk $end
+$var wire 1 i rst_n $end
+$var wire 1 j load_en $end
+$var wire 1 k data_in [15] $end
+$var wire 1 l data_in [14] $end
+$var wire 1 m data_in [13] $end
+$var wire 1 n data_in [12] $end
+$var wire 1 o data_in [11] $end
+$var wire 1 p data_in [10] $end
+$var wire 1 q data_in [9] $end
+$var wire 1 r data_in [8] $end
+$var wire 1 s data_in [7] $end
+$var wire 1 t data_in [6] $end
+$var wire 1 u data_in [5] $end
+$var wire 1 v data_in [4] $end
+$var wire 1 w data_in [3] $end
+$var wire 1 x data_in [2] $end
+$var wire 1 y data_in [1] $end
+$var wire 1 z data_in [0] $end
+$var wire 1 -! sum_in [31] $end
+$var wire 1 .! sum_in [30] $end
+$var wire 1 /! sum_in [29] $end
+$var wire 1 0! sum_in [28] $end
+$var wire 1 1! sum_in [27] $end
+$var wire 1 2! sum_in [26] $end
+$var wire 1 3! sum_in [25] $end
+$var wire 1 4! sum_in [24] $end
+$var wire 1 5! sum_in [23] $end
+$var wire 1 6! sum_in [22] $end
+$var wire 1 7! sum_in [21] $end
+$var wire 1 8! sum_in [20] $end
+$var wire 1 9! sum_in [19] $end
+$var wire 1 :! sum_in [18] $end
+$var wire 1 ;! sum_in [17] $end
+$var wire 1 <! sum_in [16] $end
+$var wire 1 =! sum_in [15] $end
+$var wire 1 >! sum_in [14] $end
+$var wire 1 ?! sum_in [13] $end
+$var wire 1 @! sum_in [12] $end
+$var wire 1 A! sum_in [11] $end
+$var wire 1 B! sum_in [10] $end
+$var wire 1 C! sum_in [9] $end
+$var wire 1 D! sum_in [8] $end
+$var wire 1 E! sum_in [7] $end
+$var wire 1 F! sum_in [6] $end
+$var wire 1 G! sum_in [5] $end
+$var wire 1 H! sum_in [4] $end
+$var wire 1 I! sum_in [3] $end
+$var wire 1 J! sum_in [2] $end
+$var wire 1 K! sum_in [1] $end
+$var wire 1 L! sum_in [0] $end
+$var wire 1 m! weight_in [15] $end
+$var wire 1 n! weight_in [14] $end
+$var wire 1 o! weight_in [13] $end
+$var wire 1 p! weight_in [12] $end
+$var wire 1 q! weight_in [11] $end
+$var wire 1 r! weight_in [10] $end
+$var wire 1 s! weight_in [9] $end
+$var wire 1 t! weight_in [8] $end
+$var wire 1 u! weight_in [7] $end
+$var wire 1 v! weight_in [6] $end
+$var wire 1 w! weight_in [5] $end
+$var wire 1 x! weight_in [4] $end
+$var wire 1 y! weight_in [3] $end
+$var wire 1 z! weight_in [2] $end
+$var wire 1 {! weight_in [1] $end
+$var wire 1 |! weight_in [0] $end
+$var wire 1 }! weight_out [15] $end
+$var wire 1 ~! weight_out [14] $end
+$var wire 1 !" weight_out [13] $end
+$var wire 1 "" weight_out [12] $end
+$var wire 1 #" weight_out [11] $end
+$var wire 1 $" weight_out [10] $end
+$var wire 1 %" weight_out [9] $end
+$var wire 1 &" weight_out [8] $end
+$var wire 1 '" weight_out [7] $end
+$var wire 1 (" weight_out [6] $end
+$var wire 1 )" weight_out [5] $end
+$var wire 1 *" weight_out [4] $end
+$var wire 1 +" weight_out [3] $end
+$var wire 1 ," weight_out [2] $end
+$var wire 1 -" weight_out [1] $end
+$var wire 1 ." weight_out [0] $end
+$var reg 32 s" sum_out [31:0] $end
+$var reg 17 t" weight_reg [16:0] $end
+$upscope $end
+$scope module PE10 $end
+$var parameter 32 u" DATA_WIDTH $end
+$var wire 1 h clk $end
+$var wire 1 i rst_n $end
+$var wire 1 j load_en $end
+$var wire 1 k data_in [15] $end
+$var wire 1 l data_in [14] $end
+$var wire 1 m data_in [13] $end
+$var wire 1 n data_in [12] $end
+$var wire 1 o data_in [11] $end
+$var wire 1 p data_in [10] $end
+$var wire 1 q data_in [9] $end
+$var wire 1 r data_in [8] $end
+$var wire 1 s data_in [7] $end
+$var wire 1 t data_in [6] $end
+$var wire 1 u data_in [5] $end
+$var wire 1 v data_in [4] $end
+$var wire 1 w data_in [3] $end
+$var wire 1 x data_in [2] $end
+$var wire 1 y data_in [1] $end
+$var wire 1 z data_in [0] $end
+$var wire 1 v" sum_in [31] $end
+$var wire 1 w" sum_in [30] $end
+$var wire 1 x" sum_in [29] $end
+$var wire 1 y" sum_in [28] $end
+$var wire 1 z" sum_in [27] $end
+$var wire 1 {" sum_in [26] $end
+$var wire 1 |" sum_in [25] $end
+$var wire 1 }" sum_in [24] $end
+$var wire 1 ~" sum_in [23] $end
+$var wire 1 !# sum_in [22] $end
+$var wire 1 "# sum_in [21] $end
+$var wire 1 ## sum_in [20] $end
+$var wire 1 $# sum_in [19] $end
+$var wire 1 %# sum_in [18] $end
+$var wire 1 &# sum_in [17] $end
+$var wire 1 '# sum_in [16] $end
+$var wire 1 (# sum_in [15] $end
+$var wire 1 )# sum_in [14] $end
+$var wire 1 *# sum_in [13] $end
+$var wire 1 +# sum_in [12] $end
+$var wire 1 ,# sum_in [11] $end
+$var wire 1 -# sum_in [10] $end
+$var wire 1 .# sum_in [9] $end
+$var wire 1 /# sum_in [8] $end
+$var wire 1 0# sum_in [7] $end
+$var wire 1 1# sum_in [6] $end
+$var wire 1 2# sum_in [5] $end
+$var wire 1 3# sum_in [4] $end
+$var wire 1 4# sum_in [3] $end
+$var wire 1 5# sum_in [2] $end
+$var wire 1 6# sum_in [1] $end
+$var wire 1 7# sum_in [0] $end
+$var wire 1 }! weight_in [15] $end
+$var wire 1 ~! weight_in [14] $end
+$var wire 1 !" weight_in [13] $end
+$var wire 1 "" weight_in [12] $end
+$var wire 1 #" weight_in [11] $end
+$var wire 1 $" weight_in [10] $end
+$var wire 1 %" weight_in [9] $end
+$var wire 1 &" weight_in [8] $end
+$var wire 1 '" weight_in [7] $end
+$var wire 1 (" weight_in [6] $end
+$var wire 1 )" weight_in [5] $end
+$var wire 1 *" weight_in [4] $end
+$var wire 1 +" weight_in [3] $end
+$var wire 1 ," weight_in [2] $end
+$var wire 1 -" weight_in [1] $end
+$var wire 1 ." weight_in [0] $end
+$var wire 1 /" weight_out [15] $end
+$var wire 1 0" weight_out [14] $end
+$var wire 1 1" weight_out [13] $end
+$var wire 1 2" weight_out [12] $end
+$var wire 1 3" weight_out [11] $end
+$var wire 1 4" weight_out [10] $end
+$var wire 1 5" weight_out [9] $end
+$var wire 1 6" weight_out [8] $end
+$var wire 1 7" weight_out [7] $end
+$var wire 1 8" weight_out [6] $end
+$var wire 1 9" weight_out [5] $end
+$var wire 1 :" weight_out [4] $end
+$var wire 1 ;" weight_out [3] $end
+$var wire 1 <" weight_out [2] $end
+$var wire 1 =" weight_out [1] $end
+$var wire 1 >" weight_out [0] $end
+$var reg 32 8# sum_out [31:0] $end
+$var reg 17 9# weight_reg [16:0] $end
+$upscope $end
+$scope module PE11 $end
+$var parameter 32 :# DATA_WIDTH $end
+$var wire 1 h clk $end
+$var wire 1 i rst_n $end
+$var wire 1 j load_en $end
+$var wire 1 k data_in [15] $end
+$var wire 1 l data_in [14] $end
+$var wire 1 m data_in [13] $end
+$var wire 1 n data_in [12] $end
+$var wire 1 o data_in [11] $end
+$var wire 1 p data_in [10] $end
+$var wire 1 q data_in [9] $end
+$var wire 1 r data_in [8] $end
+$var wire 1 s data_in [7] $end
+$var wire 1 t data_in [6] $end
+$var wire 1 u data_in [5] $end
+$var wire 1 v data_in [4] $end
+$var wire 1 w data_in [3] $end
+$var wire 1 x data_in [2] $end
+$var wire 1 y data_in [1] $end
+$var wire 1 z data_in [0] $end
+$var wire 1 M! sum_in [31] $end
+$var wire 1 N! sum_in [30] $end
+$var wire 1 O! sum_in [29] $end
+$var wire 1 P! sum_in [28] $end
+$var wire 1 Q! sum_in [27] $end
+$var wire 1 R! sum_in [26] $end
+$var wire 1 S! sum_in [25] $end
+$var wire 1 T! sum_in [24] $end
+$var wire 1 U! sum_in [23] $end
+$var wire 1 V! sum_in [22] $end
+$var wire 1 W! sum_in [21] $end
+$var wire 1 X! sum_in [20] $end
+$var wire 1 Y! sum_in [19] $end
+$var wire 1 Z! sum_in [18] $end
+$var wire 1 [! sum_in [17] $end
+$var wire 1 \! sum_in [16] $end
+$var wire 1 ]! sum_in [15] $end
+$var wire 1 ^! sum_in [14] $end
+$var wire 1 _! sum_in [13] $end
+$var wire 1 `! sum_in [12] $end
+$var wire 1 a! sum_in [11] $end
+$var wire 1 b! sum_in [10] $end
+$var wire 1 c! sum_in [9] $end
+$var wire 1 d! sum_in [8] $end
+$var wire 1 e! sum_in [7] $end
+$var wire 1 f! sum_in [6] $end
+$var wire 1 g! sum_in [5] $end
+$var wire 1 h! sum_in [4] $end
+$var wire 1 i! sum_in [3] $end
+$var wire 1 j! sum_in [2] $end
+$var wire 1 k! sum_in [1] $end
+$var wire 1 l! sum_in [0] $end
+$var wire 1 /" weight_in [15] $end
+$var wire 1 0" weight_in [14] $end
+$var wire 1 1" weight_in [13] $end
+$var wire 1 2" weight_in [12] $end
+$var wire 1 3" weight_in [11] $end
+$var wire 1 4" weight_in [10] $end
+$var wire 1 5" weight_in [9] $end
+$var wire 1 6" weight_in [8] $end
+$var wire 1 7" weight_in [7] $end
+$var wire 1 8" weight_in [6] $end
+$var wire 1 9" weight_in [5] $end
+$var wire 1 :" weight_in [4] $end
+$var wire 1 ;" weight_in [3] $end
+$var wire 1 <" weight_in [2] $end
+$var wire 1 =" weight_in [1] $end
+$var wire 1 >" weight_in [0] $end
+$var wire 1 ?" weight_out [15] $end
+$var wire 1 @" weight_out [14] $end
+$var wire 1 A" weight_out [13] $end
+$var wire 1 B" weight_out [12] $end
+$var wire 1 C" weight_out [11] $end
+$var wire 1 D" weight_out [10] $end
+$var wire 1 E" weight_out [9] $end
+$var wire 1 F" weight_out [8] $end
+$var wire 1 G" weight_out [7] $end
+$var wire 1 H" weight_out [6] $end
+$var wire 1 I" weight_out [5] $end
+$var wire 1 J" weight_out [4] $end
+$var wire 1 K" weight_out [3] $end
+$var wire 1 L" weight_out [2] $end
+$var wire 1 M" weight_out [1] $end
+$var wire 1 N" weight_out [0] $end
+$var reg 32 ;# sum_out [31:0] $end
+$var reg 17 <# weight_reg [16:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+b0 $
+b0 %
+b0 p"
+b0 q"
+b0 s"
+b0 t"
+b0 8#
+b0 9#
+b0 ;#
+b0 <#
+bx f
+bx g
+b10000 O"
+b10000 r"
+b10000 u"
+b10000 :#
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0F!
+0E!
+0D!
+0C!
+0B!
+0A!
+0@!
+0?!
+0>!
+0=!
+0<!
+0;!
+0:!
+09!
+08!
+07!
+06!
+05!
+04!
+03!
+02!
+01!
+00!
+0/!
+0.!
+0-!
+0l!
+0k!
+0j!
+0i!
+0h!
+0g!
+0f!
+0e!
+0d!
+0c!
+0b!
+0a!
+0`!
+0_!
+0^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+0W!
+0V!
+0U!
+0T!
+0S!
+0R!
+0Q!
+0P!
+0O!
+0N!
+0M!
+0|!
+0{!
+0z!
+0y!
+0x!
+0w!
+0v!
+0u!
+0t!
+0s!
+0r!
+0q!
+0p!
+0o!
+0n!
+0m!
+0."
+0-"
+0,"
+0+"
+0*"
+0)"
+0("
+0'"
+0&"
+0%"
+0$"
+0#"
+0""
+0!"
+0~!
+0}!
+0>"
+0="
+0<"
+0;"
+0:"
+09"
+08"
+07"
+06"
+05"
+04"
+03"
+02"
+01"
+00"
+0/"
+0N"
+0M"
+0L"
+0K"
+0J"
+0I"
+0H"
+0G"
+0F"
+0E"
+0D"
+0C"
+0B"
+0A"
+0@"
+0?"
+0,!
+0+!
+0*!
+0)!
+0(!
+0'!
+0&!
+0%!
+0$!
+0#!
+0"!
+0!!
+0~
+0}
+0|
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0h
+07#
+06#
+05#
+04#
+03#
+02#
+01#
+00#
+0/#
+0.#
+0-#
+0,#
+0+#
+0*#
+0)#
+0(#
+0'#
+0&#
+0%#
+0$#
+0##
+0"#
+0!#
+0~"
+0}"
+0|"
+0{"
+0z"
+0y"
+0x"
+0w"
+0v"
+0o"
+0n"
+0m"
+0l"
+0k"
+0j"
+0i"
+0h"
+0g"
+0f"
+0e"
+0d"
+0c"
+0b"
+0a"
+0`"
+0_"
+0^"
+0]"
+0\"
+0["
+0Z"
+0Y"
+0X"
+0W"
+0V"
+0U"
+0T"
+0S"
+0R"
+0Q"
+0P"
+$end
+#5000
+1!
+1h
+#10000
+0!
+0h
+#15000
+1!
+1h
+#20000
+1"
+0!
+1i
+0h
+#25000
+1!
+1h
+#30000
+1#
+b101 f
+b101 %
+0!
+1j
+1,!
+1*!
+0h
+#35000
+1!
+1h
+b100 f
+b100 %
+0,!
+b101 q"
+1|!
+1z!
+#40000
+0!
+0h
+#45000
+1!
+1h
+b11 f
+b11 %
+1,!
+1+!
+0*!
+b100 q"
+b101 t"
+1."
+1,"
+0|!
+#50000
+0!
+0h
+#55000
+1!
+1h
+b10 f
+b10 %
+0,!
+b11 q"
+b100 t"
+b101 9#
+1>"
+1<"
+0."
+1|!
+1{!
+0z!
+#60000
+0!
+0h
+#65000
+1!
+1h
+0#
+b0 %
+0j
+0+!
+0|!
+0{!
+0,"
+0>"
+0<"
+b10 q"
+b11 t"
+b100 9#
+b101 <#
+#70000
+0!
+0h
+#75000
+b1010 g
+b1010 $
+1!
+1y
+1w
+1h
+b10100 g
+b10100 $
+0y
+1x
+0w
+1v
+b10100 p"
+b11110 s"
+b101000 8#
+b110010 ;#
+1d
+1a
+1`
+1i!
+1g!
+1D
+1C
+1B
+1A
+1J!
+1H!
+#80000
+0!
+0h
+#85000
+1!
+1h
+b0 $
+0x
+0v
+b101000 p"
+b1010000 s"
+b1010000 8#
+b10001100 ;#
+0d
+1c
+1b
+0a
+0`
+1^
+0i!
+1h!
+0g!
+1f!
+0D
+0C
+0B
+1?
+0J!
+1I!
+0H!
+1G!

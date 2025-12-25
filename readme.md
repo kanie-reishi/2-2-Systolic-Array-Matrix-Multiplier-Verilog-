@@ -12,10 +12,10 @@ Fundamental building blocks used in AI accelerators and quantum computing pipeli
 Practical techniques for pipelining, parallel processing, and dataflow-oriented design on FPGA
 
 The operation performed is:
-
+```text
 | a  b |   | x |   | a*x + b*y |
 | c  d | × | y | = | c*x + d*y |
-
+````
 System Architecture
 
 The system is composed of a 2×2 grid of Processing Elements (PEs) arranged as a systolic array.
@@ -117,20 +117,20 @@ The design is verified using ModelSim with an automated testbench.
 Test Case
 
 Matrix:
-
+```text
 | 2  3 |
 | 4  5 |
-
+````
 Vector:
-
+```text
 | 10 |
 | 20 |
-
+````
 Expected result:
-
+```text
 |  80 |
 | 140 |
-
+````
 Simulation Procedure
 
 1. Loading Phase
