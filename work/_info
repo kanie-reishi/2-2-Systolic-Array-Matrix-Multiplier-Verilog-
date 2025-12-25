@@ -1,0 +1,62 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\Projects\matrixmul4x4
+vprocessing_element
+Z1 !s100 :dbJQOj:h?5]iiI]0jTA?0
+Z2 I9j3:e_Pg@ZFlnO>]7F7o40
+Z3 V:iW8hHS<e2mHzK88Cokbo1
+Z4 dH:\Projects\mini-systolic-array
+Z5 w1766671023
+Z6 8H:/Projects/mini-systolic-array/rtl/mini-systolic-pe.v
+Z7 FH:/Projects/mini-systolic-array/rtl/mini-systolic-pe.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|H:/Projects/mini-systolic-array/rtl/mini-systolic-pe.v|
+Z10 o-work work -O0
+Z11 !s108 1766673704.573000
+Z12 !s107 H:/Projects/mini-systolic-array/rtl/mini-systolic-pe.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsystolic_2x2
+Z13 !s100 mLRgb?QHoEnj21]@AnR0G1
+Z14 IFO[Zzbz[<4fd57^KXo`>E0
+Z15 V^zOmkmifUbgG6DLVdo`Ie0
+R4
+Z16 w1766673212
+Z17 8H:/Projects/mini-systolic-array/rtl/systolic_2x2.v
+Z18 FH:/Projects/mini-systolic-array/rtl/systolic_2x2.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|H:/Projects/mini-systolic-array/rtl/systolic_2x2.v|
+R10
+Z20 !s108 1766673704.685000
+Z21 !s107 H:/Projects/mini-systolic-array/rtl/systolic_2x2.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_systolic_2x2
+!i10b 1
+!s100 Z:B^RdN[gZ:Ec28ozaeLV3
+I5JVMhUkLbMEPA?E[7[S>]3
+Z22 Vf>BTDUc`W:aeS_BilDimn0
+R4
+w1766673962
+Z23 8H:/Projects/mini-systolic-array/tb/tb_systolic_2x2.v
+Z24 FH:/Projects/mini-systolic-array/tb/tb_systolic_2x2.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1766674151.848000
+!s107 H:/Projects/mini-systolic-array/tb/tb_systolic_2x2.v|
+Z25 !s90 -reportprogress|300|-work|work|H:/Projects/mini-systolic-array/tb/tb_systolic_2x2.v|
+!s101 -O0
+R10

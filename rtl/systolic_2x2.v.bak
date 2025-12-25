@@ -1,0 +1,68 @@
+module systolic_2x2 (
+    input clk, rst_n, load_en,
+    input signed [15:0] data_in,
+    input signed [15:0] weight_in,
+    output signed [31:0] result_row0,
+    output signed [31:0] result_row1
+);
+    wire signed [31:0] sum_out_0, sum_out_1;
+    wire signed [15:0] weight_out_0, weight_out_1, weight_out_2, weight_out_3;
+    // -- HÀNG 1 (ROW 0): PE00 -> PE01 --
+
+    // PE 00 (Hold w00)
+    processing_element PE_00 #(
+        .DATA_WIDTH(16)
+    ) pe00 (
+        .clk(clk),
+        .rst_n(rst_n),
+        .load_en(load_en),
+        .data_in(data_in),
+        .weight_in(weight_in),
+        .sum_in(32'd0),
+        .weight_out(weight_out_0),
+        .sum_out(sum_out_0)
+    );
+
+    // PE 01 (Hold w01)
+    processing_element PE_01 #(
+        .DATA_WIDTH(16)
+    ) pe01 (
+        .clk(clk),
+        .rst_n(rst_n),
+        .load_en(load_en),
+        .data_in(data_in),
+        .weight_in(weight_out_0),
+        .sum_in(sum_out_0),
+        .weight_out(weight_out_1),
+        .sum_out(result_row0)
+    );
+    // -- HÀNG 2 (ROW 1): PE10 -> PE11 --
+
+    // PE 10 (Hold w10)
+    processing_element PE_10 #(
+        .DATA_WIDTH(16)
+    ) pe10 (
+        .clk(clk),
+        .rst_n(rst_n),
+        .load_en(load_en),
+        .data_in(data_in),
+        .weight_in(weight_out_1),
+        .sum_in(32'd0),
+        .weight_out(weight_out_2),
+        .sum_out(sum_out_1)
+    );
+
+    // PE 11 (Hold w11)
+    processing_element PE_11 #(
+        .DATA_WIDTH(16)
+    ) pe11 (
+        .clk(clk),
+        .rst_n(rst_n),
+        .load_en(load_en),
+        .data_in(data_in),
+        .weight_in(weight_out_3),
+        .sum_in(sum_out_1),
+        .weight_out(weight_out_3),
+        .sum_out(result_row1)
+    );
+endmodule
